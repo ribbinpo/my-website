@@ -4,8 +4,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import DashboardView from "@/views/dashboard.view";
 
-type Props = {};
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home(_props: InferGetStaticPropsType<typeof getStaticProps>) {
