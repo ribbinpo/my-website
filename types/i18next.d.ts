@@ -1,15 +1,15 @@
-import 'i18next'
+import "i18next";
 
-import type common from '../public/locales/en/common.json'
+import type common from "../public/locales/en/common.json";
 
 interface I18nNamespaces {
-  common: typeof common
+  common: typeof common;
 }
 
-declare module 'i18next' {
+declare module "i18next" {
   interface CustomTypeOptions {
-    defaultNS: 'common'
-    resources: I18nNamespaces,
-    returnNull: false,
+    defaultNS: "common";
+    resources: I18nNamespaces;
+    returnNull: false;
   }
 }
