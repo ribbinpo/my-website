@@ -6,7 +6,7 @@ import ButtonForm from "../form/button.form";
 
 const Navbar = () => {
   const menuComponent = useCallback(() => {
-    return NAV_LINK.map((menu) => <div>{menu.name}</div>);
+    return NAV_LINK.map((menu) => <div key={menu.name}>{menu.name}</div>);
   }, []);
 
   return (
